@@ -93,4 +93,4 @@ See [DMR818S-5W Page](https://www.nicerf.com/walkie-talkie-module/dmr818S-5w.htm
 At 8.0V, analog mode draws up to 1.7A for 5W.
 So your power supply must handle ~2A peak current to be safe in analog.
 
-[https://www.pololu.com/product/2890](Spec)
+- https://www.pololu.com/product/2890
