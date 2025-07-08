@@ -2,7 +2,7 @@
 
 ![Mockup of handheld microphone](mockup.png)
 
-This project is an open hardware design for a **handheld smart microphone** built around the **DMR818S radio module** and **ESP32-S3**. It features a user-friendly form factor modeled after traditional handheld microphones, with modern enhancements including a color display, onboard speaker and mic, rotary encoders, and USB-C connectivity.  Yes, it is essentially a DMR Transceiver but as it contains a ESP32 MCU, it will provide wireless and bluetooth connectivity to mobile devices for programming, and operation.  Specifically, it will provide a bluetooth connected device with the ability to send and receive DMR SMS messages.
+This project is an open hardware design for a **handheld smart microphone** built around the **DMR818S radio module** and **ESP32-S3**. It features a user-friendly form factor modeled after traditional handheld microphones, with modern enhancements including a 16-bit color display, onboard speaker and mic, side knobs for controlling Menus, Channel, Volume & Squelch, and USB-C connectivity.  Yes, it is essentially a DMR Transceiver but as it contains a ESP32 MCU, it will provide wireless and bluetooth connectivity to mobile devices for programming, and operation.  Specifically, it will provide a bluetooth connected device with the ability to send and receive DMR SMS messages.  The software hopes to use MicroPython with LVGL for the UI/UX.
 
 ---
 
@@ -20,6 +20,14 @@ This project is an open hardware design for a **handheld smart microphone** buil
 - 🔌 USB-C for charging and firmware upload
 - 📶 SMA antenna connector on top
 - 🚨 TX/RX LEDs, classic PTT side button
+- Bluetooth connectivity to provide for sending and receiving SMS messages via Mobile/PC
+
+---
+
+## 🔧 Additional Features
+
+- **Programming**: Programmable with [CHiRP software](https://chirpmyradio.com/projects/chirp/wiki/Home)
+- USB-C and/or Bluetooth connectivity also provides Audio interface for voice operation
 
 ---
 
