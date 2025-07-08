@@ -54,9 +54,11 @@ See [LICENSE](https://ohwr.org/cern_ohl_s_v2.txt) for full terms.
 
 ## 🚀 Status
 
-- ✅ Schematic (in progress)
-- ⏳ PCB layout (not started)
-- ⏳ Firmware scaffold (not started)
+- ⏳ Schematic (in progress)
+- ❌ PCB layout (not started)
+- ❌ Firmware scaffold (not started)
+- ❌ Prototyping (not started)
+- ❌ Manufacturing Finished Product (not started)
 
 ---
 
