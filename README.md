@@ -2,7 +2,7 @@
 
 ![Mockup of handheld microphone](mockup.png)
 
-This project is an open hardware design for a **handheld smart microphone** built around the **DMR818S radio module** and **ESP32-S3**. It features a user-friendly form factor modeled after traditional handheld microphones, with modern enhancements including a color display, onboard speaker and mic, rotary encoders, and USB-C connectivity.
+This project is an open hardware design for a **handheld smart microphone** built around the **DMR818S radio module** and **ESP32-S3**. It features a user-friendly form factor modeled after traditional handheld microphones, with modern enhancements including a color display, onboard speaker and mic, rotary encoders, and USB-C connectivity.  Yes, it is essentially a DMR Transceiver but as it contains a ESP32 MCU, it will provide wireless and bluetooth connectivity to mobile devices for programming, and operation.  Specifically, it will provide a bluetooth connected device with the ability to send and receive DMR SMS messages.
 
 ---
 
