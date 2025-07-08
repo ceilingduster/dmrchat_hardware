@@ -1,0 +1,74 @@
+// EasyEDA Schematic: Handheld Smart Microphone for DMR818S
+
+// === MCU ===
+ESP32-S3-WROOM-1
+- USB D+/D- ←→ USB-C (via ESD protection)
+- UART1 TX/RX ←→ DMR818S UART
+- I2C (SDA/SCL) ←→ ILI9341 Display
+- I2S (BCLK/LRCK/DOUT) → I2S Amp (MAX98357A)
+- ADC1 ← Volume Encoder (press = mute)
+- GPIOs for:
+  - Channel encoder (A/B + press)
+  - Volume encoder (A/B + press)
+  - Squelch encoder (A/B + press)
+  - PTT button
+  - TX LED
+  - RX LED
+
+// === Display ===
+ILI9341 SPI TFT Display (2.4")
+- CS/DC/RESET ←→ GPIOs
+- SCK/MOSI ←→ ESP32 SPI
+- VCC/GND
+
+// === Audio ===
+- MAX98357A I2S Audio Amp → Onboard Speaker
+- Electret Mic + Preamp → ESP32 ADC or I2S input
+- 3.5mm TRRS headset jack:
+  - Switches onboard audio off when inserted
+  - Shared mic/speaker lines
+
+// === DMR Module ===
+DMR818S
+- UART ↔ ESP32 UART1
+- MIC_IN/LINE_OUT ↔ ESP32 audio path (via amp/preamp)
+- VCC (3.3V or 5V) from buck regulator
+- GND
+
+// === USB ===
+USB-C Connector (24-pin)
+- VBUS → IP5306 charging
+- D+/D- → ESD protection → ESP32 USB D+/D-
+- CC lines with 5.1k pull-downs
+
+// === Battery & Power ===
+- 5000mAh Li-ion Cell (1S)
+- IP5306 for charge + 5V boost output
+  - VBUS IN from USB-C
+  - 5V OUT → LDO or buck to 3.3V for ESP32
+- MAX17048 Fuel Gauge + Protection IC (I2C)
+  - I2C SDA/SCL → ESP32
+  - Monitors battery voltage, state of charge, and alerts
+- Optional NTC thermistor to monitor temperature
+
+// === User Inputs ===
+- Channel Encoder (EC11 with push)
+- Volume Encoder (EC11 with push = mute)
+- Squelch Encoder (EC11 with push = menu/select)
+- PTT Button (momentary)
+- TX LED (Red)
+- RX LED (Green)
+
+// === Connectors ===
+- SMA for antenna (top)
+- 3.5mm TRRS for external audio (bottom)
+- USB-C (bottom)
+
+// === Misc ===
+- ESD protection on USB lines (TPD4E05U06)
+- Pull-up resistors on I2C, encoders, and buttons
+- Mounting holes for enclosure
+
+// Notes:
+- Use LVGL + MicroPython
+- Form factor matches classic handheld mic with side knobs and top antenna
