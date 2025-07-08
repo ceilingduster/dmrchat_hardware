@@ -20,7 +20,7 @@ This project is an open hardware design for a **handheld smart microphone** buil
 - 🔌 USB-C for charging and firmware upload
 - 📶 SMA antenna connector on top
 - 🚨 TX/RX LEDs, classic PTT side button
-- [`https://www.pololu.com/product/2890`](Pololu U3V70F9) Boost Converter for DMR818S-5W which requires 7.4V @ 1.7A
+- Pololu U3V70F9 Boost Converter for DMR818S-5W which requires 7.4V @ 1.7A
 - Bluetooth connectivity to provide for sending and receiving SMS messages via Mobile/PC
 
 ---
@@ -80,3 +80,17 @@ Pull requests and community feedback are welcome! Please ensure any contribution
 # NICERF
 
 See [DMR818S-5W Page](https://www.nicerf.com/walkie-talkie-module/dmr818S-5w.html) for more information on the main module used in this project.
+
+# Current Requirements (DMR818S-5W)
+
+| Voltage (V) | Output Power (dBm) | Output Power (W) | Current (mA) |
+| ----------- | ------------------ | ---------------- | ------------ |
+| **8.0V**    | 37.3 dBm           | \~5.37W          | **910 mA**   |
+| **7.5V**    | 36.8 dBm           | \~4.79W          | 870 mA       |
+| **7.0V**    | 36.2 dBm           | \~4.17W          | 830 mA       |
+
+⚠️ Analog Mode Draws More!
+At 8.0V, analog mode draws up to 1.7A for 5W.
+So your power supply must handle ~2A peak current to be safe in analog.
+
+[https://www.pololu.com/product/2890](Product Page)
