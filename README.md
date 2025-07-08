@@ -1,4 +1,4 @@
-# Handheld Smart Microphone for DMR818S
+# Handheld Smart Microphone for DMR818S & DMR818S-5W
 
 ![Mockup of handheld microphone](mockup.png)
 
@@ -64,3 +64,8 @@ See [LICENSE](https://ohwr.org/cern_ohl_s_v2.txt) for full terms.
 
 Pull requests and community feedback are welcome! Please ensure any contributions follow the license terms.
 
+---
+
+# NICERF
+
+See [DMR818S-5W Page](https://www.nicerf.com/walkie-talkie-module/dmr818S-5w.html) for more information on the main module used in this project.
