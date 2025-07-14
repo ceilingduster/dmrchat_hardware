@@ -21,6 +21,7 @@ This project is an open hardware design for a **handheld smart microphone** buil
 - 📶 SMA antenna connector on top
 - 🚨 TX/RX LEDs, classic PTT side button
 - Pololu U3V70F9 Boost Converter for DMR818S-5W which requires 7.4V @ 1.7A
+- [XWA0653PDA-USB-C](https://www.digikey.com/en/products/detail/inventus-power/XWA0653PDA-USB-C/22042844) Power Supply that supports 9V @ 3A
 - Bluetooth connectivity to provide for sending and receiving SMS messages via Mobile/PC
 
 ---
